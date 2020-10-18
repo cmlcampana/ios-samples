@@ -16,6 +16,9 @@
 		B1D015FF253A10F40087028E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B1D015FE253A10F40087028E /* Podfile */; };
 		B1D01613253A144F0087028E /* StructuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D01612253A144F0087028E /* StructuresViewController.swift */; };
 		B1D01618253A184A0087028E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D01617253A184A0087028E /* MainTabBarController.swift */; };
+		B1D0161C253CDDF80087028E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D0161B253CDDF70087028E /* Item.swift */; };
+		B1D01620253CDE770087028E /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D0161F253CDE770087028E /* ItemTableViewCell.swift */; };
+		B1D01623253CEC1B0087028E /* CustomCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D01622253CEC1B0087028E /* CustomCellDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		B1D015FE253A10F40087028E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		B1D01612253A144F0087028E /* StructuresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuresViewController.swift; sourceTree = "<group>"; };
 		B1D01617253A184A0087028E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		B1D0161B253CDDF70087028E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B1D0161F253CDE770087028E /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		B1D01622253CEC1B0087028E /* CustomCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellDelegate.swift; sourceTree = "<group>"; };
 		DC1524937557708AB1ED77FA /* Pods-LanguageGuideSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LanguageGuideSample.release.xcconfig"; path = "Target Support Files/Pods-LanguageGuideSample/Pods-LanguageGuideSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +82,7 @@
 		B1D015DC253A0F110087028E /* LanguageGuideSample */ = {
 			isa = PBXGroup;
 			children = (
+				B1D0161A253CDDEA0087028E /* Model */,
 				B1D015FC253A10980087028E /* Resources */,
 				B1D015F8253A0FAA0087028E /* Main */,
 				B1D015F3253A0F6B0087028E /* Common */,
@@ -90,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				B1D015F4253A0F7E0087028E /* ViewCodeConfiguration.swift */,
+				B1D0161F253CDE770087028E /* ItemTableViewCell.swift */,
+				B1D01622253CEC1B0087028E /* CustomCellDelegate.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -126,6 +135,14 @@
 				B1D01612253A144F0087028E /* StructuresViewController.swift */,
 			);
 			path = Structures;
+			sourceTree = "<group>";
+		};
+		B1D0161A253CDDEA0087028E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B1D0161B253CDDF70087028E /* Item.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DBF3D9B248D35B3A17ECE545 /* Pods */ = {
@@ -251,9 +268,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1D01613253A144F0087028E /* StructuresViewController.swift in Sources */,
+				B1D01623253CEC1B0087028E /* CustomCellDelegate.swift in Sources */,
 				B1D015F5253A0F7E0087028E /* ViewCodeConfiguration.swift in Sources */,
 				B1D01618253A184A0087028E /* MainTabBarController.swift in Sources */,
 				B1D015E2253A0F110087028E /* BasicsViewController.swift in Sources */,
+				B1D01620253CDE770087028E /* ItemTableViewCell.swift in Sources */,
+				B1D0161C253CDDF80087028E /* Item.swift in Sources */,
 				B1D015DE253A0F110087028E /* AppDelegate.swift in Sources */,
 				B1D015E0253A0F110087028E /* SceneDelegate.swift in Sources */,
 			);
