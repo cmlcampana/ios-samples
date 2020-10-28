@@ -6,5 +6,5 @@
 //
 
 protocol CustomCellDelegate {
-    func showAlert(title: String)
+    func showAlert(title: String, itemType: ItemType)
 }

@@ -36,9 +36,11 @@ final class BasicsViewController: UIViewController {
 
     private func createItems() {
         items.append(Item(title: "Type Aliases",
-                          description: "Type aliases define an alternative name for an existing type. You define type aliases with the typealias keyword."))
+                          description: "Type aliases define an alternative name for an existing type. You define type aliases with the typealias keyword.",
+                          type: .typealiases))
         items.append(Item(title: "Tuples",
-                          description: "Tuples group multiple values into a single compound value. The values within a tuple can be of any type and don’t have to be of the same type as each other."))
+                          description: "Tuples group multiple values into a single compound value. The values within a tuple can be of any type and don’t have to be of the same type as each other.",
+                          type: .tuples))
     }
 }
 
@@ -72,10 +74,19 @@ extension BasicsViewController: UITableViewDataSource {
 }
 
 extension BasicsViewController: CustomCellDelegate {
-    func showAlert(title: String) {
-        let alert = UIAlertController(title: title, message: "", preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-
-        self.present(alert, animated: true, completion: nil)
+    func showAlert(title: String, itemType: ItemType) {
+        switch itemType {
+        case .typealiases:
+            openModal(vc: TypeAliasesSampleViewController())
+        default:
+            break
+        }
+    }
+    
+    // MARK: Private method
+    private func openModal(vc: UIViewController) {
+        let navController = UINavigationController(rootViewController: vc)
+       
+        self.navigationController?.present(navController, animated: true)
     }
 }

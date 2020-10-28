@@ -9,6 +9,7 @@ import UIKit
 
 final class ItemTableViewCell: UITableViewCell {
     
+    private var item: Item?
     var delegate: CustomCellDelegate?
     
     private(set) lazy var titleLabel: UILabel = {
@@ -37,13 +38,15 @@ final class ItemTableViewCell: UITableViewCell {
     }
     
     func setItem(_ item: Item) {
+        self.item = item
         titleLabel.text = item.title
         descriptionLabel.text = item.description
     }
     
     @objc
     func cellTapped() {
-        delegate?.showAlert(title: titleLabel.text ?? "")
+        guard let item = item else { return }
+        delegate?.showAlert(title: item.title, itemType: item.type)
     }
 }
 

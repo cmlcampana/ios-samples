@@ -7,5 +7,6 @@ target 'LanguageGuideSample' do
 
   # Pods for LanguageGuideSample
   pod 'SnapKit'
+  pod 'R.swift'
 
 end
