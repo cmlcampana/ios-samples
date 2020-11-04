@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5D9D992459825EB21C4981BA /* Pods_LanguageGuideSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D32138860CF38DF1D4E22BF /* Pods_LanguageGuideSample.framework */; };
 		B181C86825435E6C0032E23A /* TypeAliasesSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181C86725435E6C0032E23A /* TypeAliasesSampleViewController.swift */; };
+		B1AE65872551E03B007EA00D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AE65862551E03B007EA00D /* R.generated.swift */; };
+		B1AE658B2551E40C007EA00D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1AE658A2551E40C007EA00D /* Localizable.strings */; };
+		B1AE65902551F027007EA00D /* ArraysSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AE658F2551F027007EA00D /* ArraysSampleViewController.swift */; };
 		B1D015DE253A0F110087028E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D015DD253A0F110087028E /* AppDelegate.swift */; };
 		B1D015E0253A0F110087028E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D015DF253A0F110087028E /* SceneDelegate.swift */; };
 		B1D015E2253A0F110087028E /* BasicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D015E1253A0F110087028E /* BasicsViewController.swift */; };
@@ -26,6 +29,9 @@
 		2D32138860CF38DF1D4E22BF /* Pods_LanguageGuideSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LanguageGuideSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F5A5B396F1081697C4E795 /* Pods-LanguageGuideSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LanguageGuideSample.debug.xcconfig"; path = "Target Support Files/Pods-LanguageGuideSample/Pods-LanguageGuideSample.debug.xcconfig"; sourceTree = "<group>"; };
 		B181C86725435E6C0032E23A /* TypeAliasesSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliasesSampleViewController.swift; sourceTree = "<group>"; };
+		B1AE65862551E03B007EA00D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		B1AE658A2551E40C007EA00D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		B1AE658F2551F027007EA00D /* ArraysSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraysSampleViewController.swift; sourceTree = "<group>"; };
 		B1D015DA253A0F110087028E /* LanguageGuideSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LanguageGuideSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1D015DD253A0F110087028E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1D015DF253A0F110087028E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +72,14 @@
 			isa = PBXGroup;
 			children = (
 				B181C86725435E6C0032E23A /* TypeAliasesSampleViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		B1AE658D2551ECC2007EA00D /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				B1AE658F2551F027007EA00D /* ArraysSampleViewController.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -126,7 +140,9 @@
 		B1D015FC253A10980087028E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B1AE65862551E03B007EA00D /* R.generated.swift */,
 				B1D015E6253A0F120087028E /* Assets.xcassets */,
+				B1AE658A2551E40C007EA00D /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -143,6 +159,7 @@
 		B1D01611253A14380087028E /* Structures */ = {
 			isa = PBXGroup;
 			children = (
+				B1AE658D2551ECC2007EA00D /* Details */,
 				B1D01612253A144F0087028E /* StructuresViewController.swift */,
 			);
 			path = Structures;
@@ -173,6 +190,7 @@
 			buildConfigurationList = B1D015EE253A0F120087028E /* Build configuration list for PBXNativeTarget "LanguageGuideSample" */;
 			buildPhases = (
 				FAE733FEBC2EE0DB82AE7B8C /* [CP] Check Pods Manifest.lock */,
+				B1AE65742551D70E007EA00D /* Run R.swift */,
 				B1D015D6253A0F110087028E /* Sources */,
 				B1D015D7253A0F110087028E /* Frameworks */,
 				B1D015D8253A0F110087028E /* Resources */,
@@ -225,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1D015FF253A10F40087028E /* Podfile in Resources */,
+				B1AE658B2551E40C007EA00D /* Localizable.strings in Resources */,
 				B1D015E7253A0F120087028E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +267,26 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LanguageGuideSample/Pods-LanguageGuideSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B1AE65742551D70E007EA00D /* Run R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "Run R.swift";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/LanguageGuideSample/Resources/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/LanguageGuideSample/Resources/R.generated.swift\"\n";
 		};
 		FAE733FEBC2EE0DB82AE7B8C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -286,7 +325,9 @@
 				B1D015E2253A0F110087028E /* BasicsViewController.swift in Sources */,
 				B1D01620253CDE770087028E /* ItemTableViewCell.swift in Sources */,
 				B1D0161C253CDDF80087028E /* Item.swift in Sources */,
+				B1AE65902551F027007EA00D /* ArraysSampleViewController.swift in Sources */,
 				B1D015DE253A0F110087028E /* AppDelegate.swift in Sources */,
+				B1AE65872551E03B007EA00D /* R.generated.swift in Sources */,
 				B1D015E0253A0F110087028E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

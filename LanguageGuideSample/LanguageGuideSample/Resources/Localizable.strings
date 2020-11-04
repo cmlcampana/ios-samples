@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  LanguageGuideSample
+
+  Created by Camila Campana on 03/11/20.
+  
+*/
+
+"General.close" = "Close";
+
+"Basics.typeAliases.title" = "Type Aliases";
+"Basics.typeAliases.description" = "Type aliases define an alternative name for an existing type. You define type aliases with the typealias keyword";
+"Basics.tuples.title" = "Tuples";
+"Basics.tuples.description" = "Tuples group multiple values into a single compound value. The values within a tuple can be of any type and don’t have to be of the same type as each other";
+
+"TypeAliases.item.title" = "Type aliases define an alternative name for an existing type. You define type aliases with the typealias keyword.";
+"TypeAliases.item.description" = "Once you define a type alias, you can use the alias anywhere you might use the original name:";
+
+"Structures.collectionTypes.array.title" = "Collection Types - Arrays";
+"Structures.collectionTypes.array.description" = "An array stores values of the same type in an ordered list. The same value can appear in an array multiple times at different positions.";
+
+"Arrays.item.title" = "Arrays - Sample";
+"Arrays.item.sample.type" = "Type a number: ";
+"Arrays.item.button.addItem" = "Add in a array";
+"Arrays.item.button.clearArray" = "Clear array";

@@ -35,11 +35,11 @@ final class BasicsViewController: UIViewController {
     
 
     private func createItems() {
-        items.append(Item(title: "Type Aliases",
-                          description: "Type aliases define an alternative name for an existing type. You define type aliases with the typealias keyword.",
+        items.append(Item(title: R.string.localizable.basicsTypeAliasesTitle(),
+                          description: R.string.localizable.basicsTypeAliasesDescription(),
                           type: .typealiases))
-        items.append(Item(title: "Tuples",
-                          description: "Tuples group multiple values into a single compound value. The values within a tuple can be of any type and don’t have to be of the same type as each other.",
+        items.append(Item(title: R.string.localizable.basicsTuplesTitle(),
+                          description: R.string.localizable.basicsTuplesDescription(),
                           type: .tuples))
     }
 }

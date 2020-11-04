@@ -8,6 +8,7 @@
 enum ItemType {
     case typealiases
     case tuples
+    case arrays
 }
 
 struct Item {
